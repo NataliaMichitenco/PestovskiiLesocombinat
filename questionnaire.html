@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>questionnaire</title>
+</head>
+<body>
+    <section class="questionnaire">
+        <a href="./index.html" class="questionnaire__btn"><img class="questionnaire__delete" src="./img/exit.svg" alt="delete"></a>
+        <form class="questionnaire__form" action="questionnaireSent.html" >
+            <h2 class="questionnaire__form_title">заполните анкету</h2>
+            <input class="questionnaire__form_name" type="text" name="username" placeholder="Ф.И.О">
+            <input class="questionnaire__form_name" type="tel" name="number" placeholder="Телефон">
+            <h4 class="questionnaire__form_select">Отклик на вакансию</h4>
+            <select class="questionnaire__form_name" name="vacancy">
+                <option value="vacancy1">Выберите вакансию</option>
+                <option value="vacancy2">Вакансия 2</option>
+                <option value="vacancy3">Вакансия 3</option>
+            </select>
+            <h4 class="questionnaire__form_select">Ваше резюме</h4>
+            <p class="questionnaire__form_text">Есть резюме в формате .pdf или .doc? Приложите и отправьте его нам.</p>
+            <button class="questionnaire__form_loading" type="submit">Загрузить файл</button>
+            <div class="questionnaire__form_checkbox">
+                <input type="checkbox" name="agree" id="agree">
+                <label class="questionnaire__form_label" for="agree">"Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных для использования предоставляемых возможностей Веб-сервиса.</label>
+            </div>
+            <div class="questionnaire__form_checkbox">
+                <input type="checkbox" name="i_am" id="i_am">
+                <label class="questionnaire__form_label" for="i_am">Я достиг(ла) 18-летнего возраста</label>
+            </div>
+            <button class="questionnaire__form_btn" >ОТПРАВИТЬ АНКЕТУ</button>
+        </form>
+    </section>
+</body>
+</html>
